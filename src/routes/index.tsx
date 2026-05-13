@@ -55,8 +55,8 @@ function Index() {
       {/* Nav */}
       <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/70 border-b border-border">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="#top" className="font-bold tracking-widest text-lg">
-            SHAM<span className="text-primary">SHAD</span>
+          <a href="#top" className="font-bold tracking-tighter text-sm md:text-base opacity-90 hover:opacity-100 transition truncate max-w-[200px] md:max-w-none">
+            https://www.behance.net/shamshadalimajeedi
           </a>
           <div className="hidden md:flex gap-8 text-sm uppercase tracking-wider text-muted-foreground">
             <a href="#services" className="hover:text-foreground transition">Services</a>
@@ -96,8 +96,8 @@ function Index() {
               style={{ backgroundImage: "var(--gradient-hero)" }}>
               View My Work →
             </a>
-            <a href="mailto:shamshadali878@gmail.com" className="px-6 py-3 rounded-lg font-semibold border border-border hover:bg-secondary transition">
-              ✉️ shamshadali878@gmail.com
+            <a href="https://www.behance.net/shamshadalimajeedi" target="_blank" rel="noreferrer" className="px-6 py-3 rounded-lg font-semibold border border-border hover:bg-secondary transition flex items-center gap-2">
+              🎨 Behance Portfolio
             </a>
           </div>
           <div className="mt-12 flex items-center gap-4">

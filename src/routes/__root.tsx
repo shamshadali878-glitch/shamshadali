@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "shamahadali" },
+      { name: "description", content: "Extracts data from CVs and websites to populate digital profiles and marketing materials." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "shamahadali" },
+      { property: "og:description", content: "Extracts data from CVs and websites to populate digital profiles and marketing materials." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "shamahadali" },
+      { name: "twitter:description", content: "Extracts data from CVs and websites to populate digital profiles and marketing materials." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/48df9d97-9dbd-46c6-aa06-8218712de4ed/id-preview-22b3f017--9786514a-ab8b-4424-b995-2a61e6da3639.lovable.app-1778653697073.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/48df9d97-9dbd-46c6-aa06-8218712de4ed/id-preview-22b3f017--9786514a-ab8b-4424-b995-2a61e6da3639.lovable.app-1778653697073.png" },
     ],
     links: [
       {

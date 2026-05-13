@@ -96,8 +96,8 @@ function Index() {
               style={{ backgroundImage: "var(--gradient-hero)" }}>
               View My Work →
             </a>
-            <a href="mailto:shamshadali878@gmail.com" className="px-6 py-3 rounded-lg font-semibold border border-border hover:bg-secondary transition">
-              ✉️ shamshadali878@gmail.com
+            <a href="https://www.behance.net/shamshadalimajeedi" target="_blank" rel="noreferrer" className="px-6 py-3 rounded-lg font-semibold border border-border hover:bg-secondary transition flex items-center gap-2">
+              🎨 Behance Portfolio
             </a>
           </div>
           <div className="mt-12 flex items-center gap-4">

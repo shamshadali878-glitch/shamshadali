@@ -14,6 +14,24 @@ import social3 from "@/assets/social3.jpg";
 import social4 from "@/assets/social4.jpg";
 import social5 from "@/assets/social5.jpg";
 import social6 from "@/assets/social6.jpg";
+import c1_1 from "@/assets/carousels/c1-1.jpg";
+import c1_2 from "@/assets/carousels/c1-2.jpg";
+import c1_3 from "@/assets/carousels/c1-3.jpg";
+import c1_4 from "@/assets/carousels/c1-4.jpg";
+import c1_5 from "@/assets/carousels/c1-5.jpg";
+import c1_6 from "@/assets/carousels/c1-6.jpg";
+import c1_7 from "@/assets/carousels/c1-7.jpg";
+import c1_8 from "@/assets/carousels/c1-8.jpg";
+import c2_1 from "@/assets/carousels/c2-1.jpg";
+import c2_2 from "@/assets/carousels/c2-2.jpg";
+import c2_3 from "@/assets/carousels/c2-3.jpg";
+import c2_4 from "@/assets/carousels/c2-4.jpg";
+import c2_5 from "@/assets/carousels/c2-5.jpg";
+import c3_1 from "@/assets/carousels/c3-1.jpg";
+import c3_2 from "@/assets/carousels/c3-2.jpg";
+import c3_3 from "@/assets/carousels/c3-3.jpg";
+import c3_4 from "@/assets/carousels/c3-4.jpg";
+import c3_5 from "@/assets/carousels/c3-5.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -48,6 +66,24 @@ const experience = [
 
 const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8];
 const socials = [social1, social2, social3, social4, social5, social6];
+
+const carousels = [
+  {
+    title: "Techexa — Brand Story",
+    desc: "Multi-slide LinkedIn carousel introducing Techexa's services and value proposition.",
+    slides: [c1_1, c1_2, c1_3, c1_4, c1_5, c1_6, c1_7, c1_8],
+  },
+  {
+    title: "Techexa — Service Highlights",
+    desc: "Compact 5-slide carousel breaking down key offerings with bold typography.",
+    slides: [c2_1, c2_2, c2_3, c2_4, c2_5],
+  },
+  {
+    title: "Techexa — Campaign Series",
+    desc: "Engagement-focused carousel designed for scroll-stopping social campaigns.",
+    slides: [c3_1, c3_2, c3_3, c3_4, c3_5],
+  },
+];
 
 function Index() {
   return (
@@ -179,6 +215,41 @@ function Index() {
           {socials.map((s, i) => (
             <div key={i} className="overflow-hidden rounded-xl border border-border group">
               <img src={s} alt={`Social media design ${i + 1}`} className="w-full aspect-square object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+          ))}
+        </div>
+
+        <h2 className="text-4xl md:text-5xl font-bold mt-24 mb-3">Carousel Design</h2>
+        <p className="text-muted-foreground mb-12">Multi-slide LinkedIn & Instagram carousels designed to inform, engage, and convert.</p>
+        <div className="space-y-16">
+          {carousels.map((c, idx) => (
+            <div key={idx}>
+              <div className="flex items-end justify-between mb-5 gap-4">
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold">{c.title}</h3>
+                  <p className="text-muted-foreground text-sm mt-1 max-w-2xl">{c.desc}</p>
+                </div>
+                <span className="text-xs uppercase tracking-widest text-primary whitespace-nowrap">
+                  {c.slides.length} slides
+                </span>
+              </div>
+              <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 scroll-smooth">
+                {c.slides.map((s, i) => (
+                  <div
+                    key={i}
+                    className="relative flex-shrink-0 snap-start w-[260px] md:w-[320px] aspect-square rounded-2xl overflow-hidden border border-border group hover:border-primary/60 transition"
+                  >
+                    <img
+                      src={s}
+                      alt={`${c.title} slide ${i + 1}`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <span className="absolute top-3 left-3 bg-background/80 backdrop-blur text-xs font-semibold px-2 py-1 rounded">
+                      {i + 1} / {c.slides.length}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>

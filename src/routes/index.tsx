@@ -67,6 +67,24 @@ const experience = [
 const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8];
 const socials = [social1, social2, social3, social4, social5, social6];
 
+const carousels = [
+  {
+    title: "Techexa — Brand Story",
+    desc: "Multi-slide LinkedIn carousel introducing Techexa's services and value proposition.",
+    slides: [c1_1, c1_2, c1_3, c1_4, c1_5, c1_6, c1_7, c1_8],
+  },
+  {
+    title: "Techexa — Service Highlights",
+    desc: "Compact 5-slide carousel breaking down key offerings with bold typography.",
+    slides: [c2_1, c2_2, c2_3, c2_4, c2_5],
+  },
+  {
+    title: "Techexa — Campaign Series",
+    desc: "Engagement-focused carousel designed for scroll-stopping social campaigns.",
+    slides: [c3_1, c3_2, c3_3, c3_4, c3_5],
+  },
+];
+
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">

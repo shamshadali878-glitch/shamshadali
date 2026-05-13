@@ -218,6 +218,41 @@ function Index() {
             </div>
           ))}
         </div>
+
+        <h2 className="text-4xl md:text-5xl font-bold mt-24 mb-3">Carousel Design</h2>
+        <p className="text-muted-foreground mb-12">Multi-slide LinkedIn & Instagram carousels designed to inform, engage, and convert.</p>
+        <div className="space-y-16">
+          {carousels.map((c, idx) => (
+            <div key={idx}>
+              <div className="flex items-end justify-between mb-5 gap-4">
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold">{c.title}</h3>
+                  <p className="text-muted-foreground text-sm mt-1 max-w-2xl">{c.desc}</p>
+                </div>
+                <span className="text-xs uppercase tracking-widest text-primary whitespace-nowrap">
+                  {c.slides.length} slides
+                </span>
+              </div>
+              <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 scroll-smooth">
+                {c.slides.map((s, i) => (
+                  <div
+                    key={i}
+                    className="relative flex-shrink-0 snap-start w-[260px] md:w-[320px] aspect-square rounded-2xl overflow-hidden border border-border group hover:border-primary/60 transition"
+                  >
+                    <img
+                      src={s}
+                      alt={`${c.title} slide ${i + 1}`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    />
+                    <span className="absolute top-3 left-3 bg-background/80 backdrop-blur text-xs font-semibold px-2 py-1 rounded">
+                      {i + 1} / {c.slides.length}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Tools */}

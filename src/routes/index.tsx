@@ -14,6 +14,24 @@ import social3 from "@/assets/social3.jpg";
 import social4 from "@/assets/social4.jpg";
 import social5 from "@/assets/social5.jpg";
 import social6 from "@/assets/social6.jpg";
+import c1_1 from "@/assets/carousels/c1-1.jpg";
+import c1_2 from "@/assets/carousels/c1-2.jpg";
+import c1_3 from "@/assets/carousels/c1-3.jpg";
+import c1_4 from "@/assets/carousels/c1-4.jpg";
+import c1_5 from "@/assets/carousels/c1-5.jpg";
+import c1_6 from "@/assets/carousels/c1-6.jpg";
+import c1_7 from "@/assets/carousels/c1-7.jpg";
+import c1_8 from "@/assets/carousels/c1-8.jpg";
+import c2_1 from "@/assets/carousels/c2-1.jpg";
+import c2_2 from "@/assets/carousels/c2-2.jpg";
+import c2_3 from "@/assets/carousels/c2-3.jpg";
+import c2_4 from "@/assets/carousels/c2-4.jpg";
+import c2_5 from "@/assets/carousels/c2-5.jpg";
+import c3_1 from "@/assets/carousels/c3-1.jpg";
+import c3_2 from "@/assets/carousels/c3-2.jpg";
+import c3_3 from "@/assets/carousels/c3-3.jpg";
+import c3_4 from "@/assets/carousels/c3-4.jpg";
+import c3_5 from "@/assets/carousels/c3-5.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,

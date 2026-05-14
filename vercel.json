@@ -1,7 +1,13 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+  "outputDirectory": "dist",
+  "functions": {
+    "api/index.js": {
+      "runtime": "nodejs20.x",
+      "handler": "dist/server/index.js"
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/index.js" }
   ]
 }

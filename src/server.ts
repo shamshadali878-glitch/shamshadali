@@ -1,4 +1,5 @@
 import "./lib/error-capture";
+// src/server.ts
 
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
